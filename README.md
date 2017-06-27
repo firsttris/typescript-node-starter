@@ -1,4 +1,4 @@
-## minimal babel-node-starter
+## minimal typescript-node-starter
 
 - [**Typescript**](https://www.typescriptlang.org/) Javascript that scales (ES++ with types)
 - [**Jest**](https://facebook.github.io/jest/) for testing, mocking and coverage report
