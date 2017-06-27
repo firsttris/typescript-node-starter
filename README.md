@@ -14,7 +14,7 @@ test ----------- runs tests with coverage reports
 test-watch ----- runs tests with coverage & watch
 ```
 #### Sources
-##### Offical NodeJs Starter:
+##### Offical TypeScript-Node-Starter:
 https://github.com/Microsoft/TypeScript-Node-Starter
 ##### The definitive guide to TypeScript and possibly the best TypeScript book
 https://basarat.gitbooks.io/typescript/docs/quick/nodejs.html
