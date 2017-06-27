@@ -1,4 +1,3 @@
-// @flow
 import math from './mathematic';
 
 describe('Test Description', () => {
