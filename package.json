@@ -21,8 +21,8 @@
     "webpack": "^3.0.0"
   },
   "scripts": {
-    "dev": "concurrently \"npm run tsc-watch\" \"npm run nodemon\"",
-    "nodemon": "nodemon \"./dist/index.js\"  --watch \"./dist\"",
+    "dev": "concurrently --kill-others \"npm run tsc-watch\" \"npm run nodemon\"",
+    "nodemon": "nodemon \"./dist\"  --watch \"./dist\"",
     "tsc-build": "tsc",
     "tsc-watch": "tsc --watch",
     "test": "jest --coverage",
