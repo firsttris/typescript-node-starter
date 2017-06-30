@@ -1,6 +1,5 @@
 FROM node:alpine
-RUN mkdir -p /usr/src/app && chown node.node /usr/src/app
-USER node
+RUN mkdir -p /usr/src/app
 ADD . /usr/src/app
 WORKDIR /usr/src/app
 RUN yarn install
