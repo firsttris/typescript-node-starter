@@ -19,6 +19,5 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.ts', '.tsx', '.jsx', '.json']
-    },
-    externals: ["bindings"]
+    }
 };

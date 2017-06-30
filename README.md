@@ -9,7 +9,7 @@
 * you have to run one babel-build before you can run the dev server
 ```bash
 npm run / yarn
-dev ------------ run dev server, with hot-reload
+dev-server ----- run dev server, with hot-reload
 webpack-build -- creates bundled webpack build
 babel-build ---- create transpiled babel build
 test ----------- runs tests with coverage reports

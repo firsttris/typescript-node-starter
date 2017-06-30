@@ -15,19 +15,20 @@
     "concurrently": "^3.5.0",
     "jest": "^20.0.4",
     "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1",
     "ts-jest": "^20.0.6",
     "ts-loader": "^2.2.0",
     "typescript": "^2.3.4",
     "webpack": "^3.0.0"
   },
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run tsc-watch\" \"npm run nodemon\"",
+    "dev-server": "concurrently --kill-others \"npm run tsc-watch\" \"npm run nodemon\"",
     "nodemon": "nodemon \"./dist\"  --watch \"./dist\"",
     "tsc-build": "tsc",
     "tsc-watch": "tsc --watch",
     "test": "jest --coverage",
     "test-watch": "jest --coverage --watchAll",
-    "webpack-build": "webpack --config webpack.config.js"
+    "webpack-build": "webpack"
   },
   "jest": {
     "globals": {
