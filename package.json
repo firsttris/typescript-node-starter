@@ -22,7 +22,7 @@
     "webpack": "^3.0.0"
   },
   "scripts": {
-    "dev-server": "concurrently --kill-others \"yarn tsc-watch\" \"yarn nodemon\"",
+    "dev-server": "concurrently \"yarn tsc-watch\" \"yarn nodemon\"",
     "nodemon": "nodemon \"./dist\"  --watch \"./dist\"",
     "tsc-build": "tsc",
     "tsc-watch": "tsc --watch",
