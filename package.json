@@ -12,7 +12,6 @@
   "devDependencies": {
     "@types/jest": "^20.0.2",
     "@types/node": "^8.0.2",
-    "concurrently": "^3.5.0",
     "jest": "^20.0.4",
     "nodemon": "^1.11.0",
     "rimraf": "^2.6.1",
@@ -22,8 +21,7 @@
     "webpack": "^3.0.0"
   },
   "scripts": {
-    "dev-server": "concurrently \"yarn tsc-watch\" \"yarn nodemon\"",
-    "nodemon": "nodemon \"./dist\"  --watch \"./dist\"",
+    "dev-server": "nodemon",
     "tsc-build": "tsc",
     "tsc-watch": "tsc --watch",
     "test": "jest --coverage",
@@ -47,5 +45,8 @@
     }
   },
   "keywords": [],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^3.2.0"
+  }
 }
