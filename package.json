@@ -11,14 +11,14 @@
   "main": "dist/index",
   "devDependencies": {
     "@types/jest": "^20.0.2",
-    "@types/node": "^8.0.2",
+    "@types/node": "^8.0.13",
     "jest": "^20.0.4",
     "nodemon": "^1.11.0",
     "rimraf": "^2.6.1",
-    "ts-jest": "^20.0.6",
-    "ts-loader": "^2.2.0",
-    "typescript": "^2.3.4",
-    "webpack": "^3.0.0"
+    "ts-jest": "^20.0.7",
+    "ts-loader": "^2.3.0",
+    "typescript": "^2.4.1",
+    "webpack": "^3.3.0"
   },
   "scripts": {
     "dev-server": "nodemon",
@@ -28,7 +28,8 @@
     "test-watch": "jest --coverage --watchAll",
     "webpack-build": "webpack",
     "docker-build": "docker-compose build",
-    "docker-up": "docker-compose up"
+    "docker-up": "docker-compose up",
+    "update-dependencies": "yarn upgrade-interactive"
   },
   "jest": {
     "globals": {
