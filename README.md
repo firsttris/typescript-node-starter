@@ -8,7 +8,7 @@
 - [**Docker**](https://www.docker.com/) create container
 
 ## script jobs
-* you have to run one babel-build before you can run the dev server
+
 ```bash
 npm run / yarn
 nodemon -------- run hot-reload with nodemon
