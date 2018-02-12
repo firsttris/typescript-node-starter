@@ -33,6 +33,7 @@
     "ts-node-dev": "ts-node-dev --inspect --no-notify -r ./register-ts-config-path.ts ./src/index.ts",
     "tsc-build": "tsc",
     "tsc-watch": "tsc --watch",
+    "tslint:fix": "tslint --fix -c tslint.json \"*.{ts,tsx}\"",
     "test": "jest --coverage",
     "test-watch": "jest --coverage --watchAll",
     "webpack-build": "webpack",
