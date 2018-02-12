@@ -3,25 +3,34 @@
   "version": "1.0.0",
   "description": "typescript nodejs starter",
   "author": "Tristan Teufel",
-  "homepage": "teufel-it.de",
+  "homepage": "https://teufel-it.de",
   "repository": {
     "type": "git",
     "url": "https://github.com/firsttris/typescript-node-starter.git"
   },
   "main": "dist/index",
   "devDependencies": {
-    "@types/jest": "^20.0.2",
-    "@types/node": "^8.0.13",
-    "jest": "^20.0.4",
-    "nodemon": "^1.11.0",
-    "rimraf": "^2.6.1",
-    "ts-jest": "^20.0.7",
-    "ts-loader": "^2.3.0",
-    "typescript": "^2.4.1",
-    "webpack": "^3.3.0"
+    "@types/jest": "^22.1.2",
+    "@types/node": "^9.4.5",
+    "clean-webpack-plugin": "^0.1.18",
+    "jest": "^22.2.2",
+    "nodemon": "^1.14.12",
+    "prettier": "^1.10.2",
+    "ts-jest": "^22.0.4",
+    "ts-loader": "^3.5.0",
+    "ts-node": "^4.1.0",
+    "ts-node-dev": "^1.0.0-pre.11",
+    "tsconfig-paths": "^3.1.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.7.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-plugin-prettier": "^1.3.0",
+    "typescript": "^2.7.1",
+    "webpack": "^3.11.0"
   },
   "scripts": {
-    "dev-server": "nodemon",
+    "nodemon": "nodemon",
+    "ts-node-dev": "ts-node-dev --inspect --no-notify -r ./register-ts-config-path.ts ./src/index.ts",
     "tsc-build": "tsc",
     "tsc-watch": "tsc --watch",
     "test": "jest --coverage",
@@ -33,8 +42,11 @@
   },
   "jest": {
     "globals": {
-      "__TS_CONFIG__": "tsconfig.json"
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
     },
+    "mapCoverage": true,
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "moduleFileExtensions": [
       "ts",
@@ -42,12 +54,9 @@
       "js"
     ],
     "transform": {
-      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+      "^.+\\.(ts|tsx)$": "ts-jest"
     }
   },
   "keywords": [],
-  "license": "MIT",
-  "dependencies": {
-    "ts-node": "^3.2.0"
-  }
+  "license": "MIT"
 }

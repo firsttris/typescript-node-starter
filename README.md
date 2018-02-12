@@ -3,13 +3,16 @@
 - [**Typescript**](https://www.typescriptlang.org/) Javascript that scales (ES++ with types)
 - [**Jest**](https://facebook.github.io/jest/) for testing, mocking and coverage report
 - [**Webpack**](https://webpack.js.org/) module bundler
+- [**TSLint**](https://palantir.github.io/tslint/) linter
+- [**Prettier**](https://prettier.io/) opinionated code formatter
 - [**Docker**](https://www.docker.com/) create container
 
 ## script jobs
 * you have to run one babel-build before you can run the dev server
 ```bash
 npm run / yarn
-dev-server ----- run dev server, with hot-reload
+nodemon -------- run hot-reload with nodemon
+ts-node-dev ---- run hot-reload with ts-node-dev
 webpack-build -- creates bundled webpack build
 babel-build ---- create transpiled babel build
 test ----------- runs tests with coverage reports
