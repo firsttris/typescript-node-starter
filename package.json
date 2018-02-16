@@ -35,23 +35,13 @@
     "test": "jest --coverage",
     "build": "webpack"
   },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfigFile": "tsconfig.json"
-      }
-    },
-    "mapCoverage": true,
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    }
-  },
-  "keywords": [],
+  "keywords": [
+    "microserver",
+    "nodejs",
+    "typescript",
+    "jest",
+    "webpack",
+    "prettier"
+  ],
   "license": "MIT"
 }
