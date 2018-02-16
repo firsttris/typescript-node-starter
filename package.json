@@ -29,17 +29,11 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
+    "dev": "ts-node-dev --inspect --no-notify -r ./register-ts-config-path.ts ./src/index.ts",
     "nodemon": "nodemon",
-    "ts-node-dev": "ts-node-dev --inspect --no-notify -r ./register-ts-config-path.ts ./src/index.ts",
-    "tsc-build": "tsc",
-    "tsc-watch": "tsc --watch",
     "tslint:fix": "tslint --fix -c tslint.json \"*.{ts,tsx}\"",
     "test": "jest --coverage",
-    "test-watch": "jest --coverage --watchAll",
-    "webpack-build": "webpack",
-    "docker-build": "docker-compose build",
-    "docker-up": "docker-compose up",
-    "update-dependencies": "yarn upgrade-interactive"
+    "build": "webpack"
   },
   "jest": {
     "globals": {
